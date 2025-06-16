@@ -20,7 +20,7 @@ function Slider() {
                     <div className={CheckoutStyle.imgdiv}>
                         <img
                             className={CheckoutStyle.prdimg}
-                            src={`${process.env.REACT_APP_UPLOAD_URL}/`+ element.imageUrl}
+                            src={element.imageUrl}
                             onDragStart={handleDragStart}
                             role="presentation"
                             alt=""

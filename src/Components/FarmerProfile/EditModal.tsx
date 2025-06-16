@@ -133,7 +133,7 @@ export default function EditModal(farmer:any) {
                     <ModalContent sx={style}>
                         <form  lang="ar" onSubmit={formikedit.handleSubmit}>
                             <div className={`${FarmerHederStyle.profile_pic}`} style={{margin:"10px auto"}}>
-                                <img className={ FarmerHederStyle.imagepro} src={formikedit.values.img!=null? URL.createObjectURL(formikedit.values.img):(`${api}${farmerr?.img}`)}  alt="avater"/>
+                                <img className={ FarmerHederStyle.imagepro} src={formikedit.values.img!=null? URL.createObjectURL(formikedit.values.img):(`${farmerr?.img}`)}  alt="avater"/>
                                 <div style={{ position: "absolute", top: "25%", right: "34%" }}>
                                     <label htmlFor="file">
                                         <FaCamera style={{ color: "#353333", fontSize: "30px", cursor: "pointer" }} />

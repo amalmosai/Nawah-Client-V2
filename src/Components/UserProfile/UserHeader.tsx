@@ -11,7 +11,7 @@ export default function Header(user:any) {
         <div className={"container"}>
             <div className={ UserHederStyle.user_header_section}>
               <div className={ UserHederStyle.profile_pic}>
-                  <img className={ UserHederStyle.imagepro} src={`${api}${userr?.img}`}  alt="avater"/>
+                  <img className={ UserHederStyle.imagepro} src={`${userr?.img}`}  alt="avater"/>
               </div>
             </div>
         </div>

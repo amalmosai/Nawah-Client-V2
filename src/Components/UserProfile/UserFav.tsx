@@ -49,7 +49,7 @@ function UserFav() {
                                         <tr>
                                             <td>{++index}</td>
                                             <td className={styles.aa}>
-                                                <img src={`${api}${item.imageUrl}`} alt="productImage" className={styles.roundedCircle} />
+                                                <img src={`${item.imageUrl}`} alt="productImage" className={styles.roundedCircle} />
                                             </td>
                                             <td>{item.name}</td>
                                             <td>{item.category}</td>

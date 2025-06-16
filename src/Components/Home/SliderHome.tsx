@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getallproducts } from '../../Redux/Slices/ProductSlice';
+import { getallproducts } from "../../Redux/Slices/ProductSlice";
 import { AsyncThunkConfig } from "@reduxjs/toolkit/dist/createAsyncThunk";
 import Trend from "./Slider.module.css";
 import { IProduct } from "../../interfaces/iProduct";
 import { RootState } from "../../Redux/Store";
 import { useAppSelector } from "../../Redux/hooks";
 
-
 function SliderHome() {
-  const api =`${process.env.REACT_APP_UPLOAD_URL}/`;
+  const api = `${process.env.REACT_APP_UPLOAD_URL}/`;
   const [arr, setArr] = useState<Array<IProduct>>([]);
-  const dispatch = useDispatch()<any| object| AsyncThunkConfig>;
+  const dispatch = useDispatch()<any | object | AsyncThunkConfig>;
 
   useEffect(() => {
     dispatch(getallproducts())
       .then((result: any) => {
-        setArr([...result.payload.data]);   
+        setArr([...result.payload.data]);
       })
       .catch((err: any) => {
-        console.error('Error fetching data:', err);
+        console.error("Error fetching data:", err);
       });
   }, []);
 
@@ -52,7 +51,7 @@ function SliderHome() {
             >
               <div className={Trend.content}>
                 <div className={Trend.img}>
-                  <img src={`${api}${item.imageUrl}`} alt="" />
+                  <img src={`${item.imageUrl}`} alt="" />
                 </div>
                 <div className={Trend.a}>
                   <h4>

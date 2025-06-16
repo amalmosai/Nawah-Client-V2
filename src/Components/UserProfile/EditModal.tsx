@@ -105,7 +105,7 @@ export default function EditModal(user:any) {
                     <ModalContent sx={style}>
                         <form  lang="ar" onSubmit={formikedit.handleSubmit}>
                             <div className={`${UserHederStyle.profile_pic}`} style={{margin:"10px auto",width:""}}>
-                                <img className={ UserHederStyle.imagepro} src={formikedit.values.img!=null? URL.createObjectURL(formikedit.values.img):(`${api}${userr?.img}`)}  alt="avater"/>
+                                <img className={ UserHederStyle.imagepro} src={formikedit.values.img!=null? URL.createObjectURL(formikedit.values.img):(`${userr?.img}`)}  alt="avater"/>
                                 <div style={{ position: "absolute", top: "32%", right: "33%" }}>
                                     <label htmlFor="file">
                                         <FaCamera style={{ color: "#353333", fontSize: "30px", cursor: "pointer" }} />

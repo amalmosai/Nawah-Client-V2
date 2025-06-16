@@ -11,7 +11,7 @@ function Header(engineer:any) {
             <div className={"container"}>
                 <div className={FarmarHederStyle.user_header_section}>
                   <div className={FarmarHederStyle.profile_pic}>
-                      <img className={FarmarHederStyle.imagepro}src={`${api}${engineerr?.img}`} alt="avatar"/> 
+                      <img className={FarmarHederStyle.imagepro}src={`${engineerr?.img}`} alt="avatar"/> 
                   </div>
                 </div>
             </div>

@@ -16,7 +16,7 @@ function EngineerFarmer(engineer:any) {
                     return <div className={styles.card}>
                         <div className={styles.ds_top} />
                         <div className={styles.avatar_holder}>
-                            <img src={`${api}${item?.img}`} alt='avater'/>
+                            <img src={`${item?.img}`} alt='avater'/>
                         </div>
                         <div className={styles.name}>
                             <h3>{item?.fname} {item?.lname}</h3>
